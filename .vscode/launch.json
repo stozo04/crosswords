@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Crossword",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:structureFile}",
+                "${input:wordsFile}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "structureFile",
+            "type": "promptString",
+            "description": "Enter structure file path",
+            "default": "data/structure1.txt"
+        },
+        {
+            "id": "wordsFile",
+            "type": "promptString",
+            "description": "Enter words file path",
+            "default": "data/words1.txt"
+        }
+    ]
+}

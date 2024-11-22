@@ -3,6 +3,10 @@ class Variable():
     ACROSS = "across"
     DOWN = "down"
 
+    # i: Row
+    # j: Column
+    # direction: ACROSS, DOWN
+    # length: length
     def __init__(self, i, j, direction, length):
         """Create a new variable with starting point, direction, and length."""
         self.i = i
@@ -37,6 +41,8 @@ class Variable():
 
 class Crossword():
 
+    # structure_file: defines the structure of the puzzle 
+    # words_file: defines a list of words (one on each line) to use for the vocabulary of the puzzle. 
     def __init__(self, structure_file, words_file):
 
         # Determine structure of crossword
